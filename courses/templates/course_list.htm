@@ -9,7 +9,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(241, 195, 217);    
+    background-color: rgb(255, 255, 255);    
 }
 
 table{
@@ -24,7 +24,8 @@ th, caption{
 }
 
 table, th, td{
-    border: 1px solid #000;
+    border: 1px solid #c200a8;
+
     border-collapse: collapse;
 }
 
@@ -33,26 +34,61 @@ th, td{
 }
 
 tr:nth-child(even){
-    background-color: blanchedalmond;
+    background-color: rgb(255, 255, 255);
 }
 
 tr:nth-child(odd){
     background-color:rgb(255, 255, 255);
 }
 
-.pic{
-    text-align: center;
-    height: 90px;
-    border-radius: 20px;
-    margin-left: 520px;
-    margin-top: 30px;
+.info {
+  border-color: #c200a8;
+  color:#c200a8;
 }
+  
+.info:hover {
+  background:#c200a8;
+  color: white;
+}
+
+.info {
+  border-color: #c200a8;
+  color:#c200a8;
+}
+
+.info:hover {
+  background:#c200a8;
+  color: white;
+}
+.clearfix {
+  margin: 15px;
+ 
+}
+.btn{
+  background-color:#ffffff;
+  color:#c200a8;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  width: 300px;
+  margin-right: 71px;
+  border: 1px solid #c200a8;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
     </style>
 </head>
 <body>
-    <img class = "pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAriIaiHNiXxhv7x1m99
-    _HC9s55DEELgOHPEobCvdI3OFyx5LGDE0EHUZf3WG5cdvMh6A&usqp=CAU">
+    
     <center><h1>Course List</h1></center>
+<div class="clearfix">
+    <a class="btn info" href="{% url 'register_courses' %}"> ADD COURSE </a>
+   </div>
     <div class="vl"></div>
     <table class="table">
         <tr>

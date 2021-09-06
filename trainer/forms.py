@@ -10,70 +10,70 @@ class TrainerRegistrationForm(forms.ModelForm):
         widgets={
             'first_name': TextInput(attrs={
                 'class': "form-control",
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'FirstName'
                 }),
 
             'last_name':TextInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'LastName'
                 }),
 
             'gender':Select(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'Gender',
-                'multiple':True,
+                
                 }),
 
             'profile_pic':FileInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'Profile',
                 'multiple':True,
                 }),
 
             'resume':FileInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'PhoneNumber',
                 'multiple':True,
                 }),
 
             'joining_date':DateInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'Joined'
                 }),
 
             'nationality':TextInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'Country'
                 }),
 
              'email_address': EmailInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'Email'
                 }),
 
             'salary':NumberInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'Salary'
                 }),
 
             'company':TextInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'Company'
                 }),
 
             'course':TextInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'CourseName'
                 }),
         }

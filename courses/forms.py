@@ -10,31 +10,31 @@ class CourseRegistrationForm(forms.ModelForm):
         widgets = {
             'course_name': TextInput(attrs={
                 'class': "form-control",
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'Course'
                 }),
 
             'course_id':TextInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'Id'
                 }),
 
             'course_trainer':TextInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'Trainer'
                 }),
 
             'course_description':TextInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 500px;',
                 'placeholder': 'Description'
                 }),
 
             'course_email':EmailInput(attrs={
                 'class': "form-control", 
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 5 00px;',
                 'placeholder': 'Email'
                 }),
         }
