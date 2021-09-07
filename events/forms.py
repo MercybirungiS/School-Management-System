@@ -11,7 +11,7 @@ class EventRegistrationForm(forms.ModelForm):
       'start_time': DateInput(attrs=
       {
         'type': 'datetime-local',
-        'style': 'max-width: 300px;',
+        'style': 'max-width: 500px;',
         'class': "form-control",
       }, 
 
@@ -20,7 +20,7 @@ class EventRegistrationForm(forms.ModelForm):
       'end_time': DateInput(attrs=
       {
         'type': 'datetime-local',
-        'style': 'max-width: 300px;',
+        'style': 'max-width: 500px;',
         'class': "form-control",    
       },
        
@@ -29,14 +29,14 @@ class EventRegistrationForm(forms.ModelForm):
       'event_name':TextInput(attrs=
       {
         'class': "form-control",
-        'style': 'max-width: 300px;',
+        'style': 'max-width: 500px;',
         'placeholder': 'Name'
       }),
 
       'event_location':TextInput(attrs=
       {
         'class': "form-control",
-        'style': 'max-width: 300px;',
+        'style': 'max-width: 500px;',
         'placeholder': 'Event Venue'
       }),     
     }

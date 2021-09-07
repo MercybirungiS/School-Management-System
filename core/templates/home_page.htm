@@ -14,14 +14,17 @@
     text-decoration: none;
   
 }
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+  
+    font-weight: bold;
+}
 img{
     height: 400px;
     width:500px;
-    margin-top: -50px;
-
-   
-
-  
+    margin-top: -50px; 
 }
 .left{
     padding-left: 300px;
@@ -31,10 +34,16 @@ img{
     padding-bottom:10px;
     font-size:20px;
     font-weight: 500;
-    padding-left: 10px;
-  
-    
+    padding-left: -10px;
+    text-shadow: #000000;
 }
+    
+ .home_content{
+     z-index: 999;
+
+ }
+    
+
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -69,7 +78,7 @@ section{
 }
 .max-width{
     max-width: 1300px;
-    /* padding: 0 50px;  */
+    padding: 0 100px; 
     margin: auto;
 }
 
@@ -80,9 +89,11 @@ section{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 5px 0;
+    /* padding: 5px 0; */
+    padding-bottom: -60px;
     font-family: 'Roboto Slab', serif;
     transition: all 0.3s ease;
+    /* margin-top: 20px; */
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -123,7 +134,7 @@ section{
 }
 .navbar .menu li a:hover{
     color: #000000;
-    list-style: none;
+    text-decoration: none;
 }
 
 
@@ -137,7 +148,7 @@ section{
     display: flex;
     background:   url("") no-repeat center;
     /* background: url("https://satmatgroup.com/school_management_software/bootstrap/image/why_school_management_software_opt.png") no-repeat center; */
-background-color:#b854a7;
+background-color:#bd00bd;
     background-blend-mode: screen;
     height: 50vh;
     color: #fff;
@@ -175,7 +186,7 @@ background-color:#b854a7;
               padding: 10px; 
               /* padding-right: 10px;   */
               margin: 10px 0px;   
-              border: solid 1px #f7f7f7;
+              border: solid 2px #f7f7f7;
               cursor: pointer; 
               border-radius: 10px;  
               margin-right: 20px;
@@ -190,7 +201,7 @@ background-color:#b854a7;
               padding: 10px; 
               /* padding-right: 10px;   */
               margin: 10px 0px;   
-              border: solid 1px #f7f7f7;
+              border: solid 2px #f7f7f7;
               cursor: pointer; 
               border-radius: 10px;  
               margin-right: 20px;
@@ -205,7 +216,7 @@ background-color:#b854a7;
               padding: 10px; 
               /* padding-right: 10px;   */
               margin: 10px 0px;   
-              border: solid 1px #f7f7f7;
+              border: solid 2px #f7f7f7;
               cursor: pointer; 
               border-radius: 10px;  
               margin-right: 20px;
@@ -220,7 +231,7 @@ background-color:#b854a7;
               padding: 10px; 
               /* padding-right: 10px;   */
               margin: 10px 0px;   
-              border: solid 1px #f7f7f7;
+              border: solid 2px #ffffff;
               cursor: pointer; 
               border-radius: 10px;  
               margin-right: 20px;
@@ -261,6 +272,7 @@ background-color:#b854a7;
 
     <!-- home section start -->
     <section class="home" id="home">
+        
         <div class="max-width">
             <div class="home-content"> 
              
@@ -268,7 +280,7 @@ background-color:#b854a7;
                     <button class="student">{{student}} Students</button>
                     <button class="trainer">{{trainer}} Trainers</button>    
                     <button class="course">{{course}} Courses</button>
-                    <button class="events">{{calendar}} Events</button>
+                    <button class="events">{{events}} Events</button>
 
                     
                 
@@ -282,6 +294,7 @@ background-color:#b854a7;
 
        
     </section> 
+    <footer>@CodeQueen2021</footer>
   
     
 </body>

@@ -5,7 +5,7 @@ from django.db.models.base import Model
 from django.db.models.enums import Choices
 from django.db.models.fields import IntegerField
 from django.forms import TextInput, EmailInput
-from django.forms.widgets import ClearableFileInput, DateInput, EmailInput, FileInput, NumberInput, Select, TextInput, SelectDateWidget
+from django.forms.widgets import ClearableFileInput, DateInput, EmailInput, FileInput, MultipleHiddenInput, NumberInput, Select, TextInput, SelectDateWidget
 from .models import Student
 
 class StudentRegistrationForm(forms.ModelForm):
@@ -46,7 +46,9 @@ class StudentRegistrationForm(forms.ModelForm):
             'nationality':TextInput(attrs={
                 'class': "form-control", 
                 'style': 'max-width: 500px;',
-                'placeholder': 'Nationality'
+                'placeholder': 'Nationality',
+                 'multiple':True,
+                
                 }),
             
              'medical_form':ClearableFileInput(attrs={

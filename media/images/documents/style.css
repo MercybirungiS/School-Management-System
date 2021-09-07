@@ -1,0 +1,28 @@
+body{
+    background: pink;
+
+}
+table{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    table-layout: fixed;
+}
+table,tr,th,td{
+    padding: 20px;
+    color: rgb(40, 1, 49);
+    border: 1px solid purple;
+    border-collapse: collapse;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(top,violet 0%,pink 100%);
+    background: -webkit-linear-gradient(top,violet 0%,pink 100%);
+}
+td:hover{
+    background: rgb(148, 206, 253) ;
+}
+h1{
+    text-align: center;
+    color: rgb(65, 7, 80);
+    padding-top: 10%;
+}

@@ -1,0 +1,62 @@
+x=[1,2,3,4,5]
+>>> y=["a","b","c","d"]
+>>> z=[1,2,3,"a","b",True,False]
+>>> print(x)
+[1, 2, 3, 4, 5]
+>>> print(y)
+['a', 'b', 'c', 'd']
+>>> print(z)
+[1, 2, 3, 'a', 'b', True, False]
+>>> type(z)
+<class 'list'>
+>>> type(y)
+<class 'list'>
+>>> type(z)
+<class 'list'>
+>>> k=x+y
+>>> j=x*3
+>>> print(j)
+[1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+>>> print(k)
+[1, 2, 3, 4, 5, 'a', 'b', 'c', 'd']
+>>> 
+the plus symbol combines lists together
+multiplication repeats lis
+['Mango', 'Banana', 'Apple', 'Pineapple', 'orange', 'Kiwi', 'Avocado', 'Watermelon']
+>>> fruits.remove("Apple")
+>>> print(fruits)
+['Mango', 'Banana', 'Pineapple', 'orange', 'Kiwi', 'Avocado', 'Watermelon']
+>>> fruits.sort()
+>>> print(fruits)
+['Avocado', 'Banana', 'Kiwi', 'Mango', 'Pineapple', 'Watermelon', 'orange']
+>>> fruits.sort(reverse=True)
+>>> print(fruits)
+['orange', 'Watermelon', 'Pineapple', 'Mango', 'Kiwi', 'Banana', 'Avocado']
+>>> x=["a","b","x","j"]
+>>> y=["a","x","j"]
+>>> x.sort()
+>>> y.sort(reverse=True)
+>>> print(y)
+['x', 'j', 'a']
+>>> y.sort()
+>>> print(y)
+['a', 'j', 'x']
+>>> print(fruits)
+['orange', 'Watermelon', 'Pineapple', 'Mango', 'Kiwi', 'Banana', 'Avocado']
+>>> fruits.reverse()
+>>> print(fruits)
+['Avocado', 'Banana', 'Kiwi', 'Mango', 'Pineapple', 'Watermelon', 'orange']
+>>> fruits.pop()
+'orange'
+>>> print(fruits)
+['Avocado', 'Banana', 'Kiwi', 'Mango', 'Pineapple', 'Watermelon']
+>>> del fruits[1]
+>>> print(fruits)
+['Avocado', 'Kiwi', 'Mango', 'Pineapple', 'Watermelon']
+>>> len(fruits)
+5
+>>> fruits.clear()
+>>> print(fruits)
+[]
+
+
