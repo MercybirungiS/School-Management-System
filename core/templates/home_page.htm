@@ -178,7 +178,7 @@ background-color:#bd00bd;
 
 .student{
              
-             background: none;
+             background: white;
              width: 40%;  
              
               font-size: 20px;  
@@ -190,10 +190,11 @@ background-color:#bd00bd;
               cursor: pointer; 
               border-radius: 10px;  
               margin-right: 20px;
+              color:#bd00bd ;
              }
 .course{
              
-             background: none;
+             background: white;
              width: 40%;  
              
               font-size: 20px;  
@@ -205,10 +206,11 @@ background-color:#bd00bd;
               cursor: pointer; 
               border-radius: 10px;  
               margin-right: 20px;
+              color: #bd00bd;
              }
  .trainer{
              
-             background: none;
+             background: white;
              width: 40%;  
              
               font-size: 20px;  
@@ -220,10 +222,11 @@ background-color:#bd00bd;
               cursor: pointer; 
               border-radius: 10px;  
               margin-right: 20px;
+              color: #bd00bd;
              }
 .events{
              
-             background: none;
+             background: white;
              width: 40%;  
              
               font-size: 20px;  
@@ -235,12 +238,13 @@ background-color:#bd00bd;
               cursor: pointer; 
               border-radius: 10px;  
               margin-right: 20px;
+              color: #bd00bd;
              }
              button:hover {   
               opacity: 0.7; 
-              background: white;  
-              border: solid 1px #c206c2;
-              color: rgb(179, 5, 155);}
+              background:none;  
+              border: solid 2px #ffffff;
+              color: rgb(255, 255, 255);}
 
    </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -257,7 +261,7 @@ background-color:#bd00bd;
             <div class="logo"><a href="#">C<span>Q</span></a></div>
             
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="{%url 'home_page'%}" class="menu-btn">Home</a></li>
 
                 <li><a href="{%url 'student_list'%}"class="menu-btn">Students</a></li>
                 <li><a href="{%url 'trainer_list'%}"class="menu-btn">Trainers</a></li>

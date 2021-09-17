@@ -7,7 +7,6 @@
     <title>Student Profile</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -27,13 +26,11 @@ button {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color:#c200a2;
+  background-color: #000;
   text-align: center;
   cursor: pointer;
   width: 100%;
   font-size: 18px;
-  border-radius: 10%;
-  
 }
 
 a {
@@ -45,25 +42,39 @@ a {
 button:hover, a:hover {
   opacity: 0.7;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background:white;
+}
+::-webkit-scrollbar-thumb {
+    background: #c20098;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:#c200a2;
+}
 </style>
 </head>
 <body>
 
-<h2 style="text-align:center">Student Profile </h2>
+<h2 style="text-align:center">Trainer Profile </h2>
 
 <div class="card">
-  <img src="{{student.profile_pic.url}}" alt="Profile" style="width:100%" >
+  <img src="{{trainer.profile_pic.url}}" alt="Profile" style="width:100%" >
 
   
-  <h2>{{student.first_name}} {{student.last_name}} </h2>
+  <h2>{{trainer.first_name}} {{trainer.last_name}} </h2>
   
-  <p class="title">{{student.age}}</p>
-  <p class="title">                {{student.phone_number}}
+  <p class="title">{{trainer.age}}</p>
+  <p class="title">                {{trainer.phone_number}}
 </p>
 
   <div style="margin: 24px 0;">
  
-  <p><button>{{student.email_address}}</button></p>
+  <p><button>{{trainer.email_address}}</button></p>
 </div>
 
 </body>

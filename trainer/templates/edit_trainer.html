@@ -4,23 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Details</title>
-<style>
-    ::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background:white;
-}
-::-webkit-scrollbar-thumb {
-    background: #c20098;
-    border-radius: 30px;
-}
+    <title>Student Form</title>
+    <style>
 
-::-webkit-scrollbar-thumb:hover {
-    background:#c200a2;
-}
-     body{
+        body{
         margin:0;
         font-family:arial,tahoma,sans-serif;
         font-size:12px;
@@ -87,21 +74,24 @@
            hr{
               border-top: 1px dashed #f75dce;
            }
-
-    </style>
+          </style>
 </head>
 <body>
-    
 
-    <center><h1>Registration Details</h1></center>
-    
-    <div class="registration">
-        <form method="POST" enctype="multipart/form-data">
-            {%csrf_token%}
-            {{form.as_p}}  
-            <button type="submit" class="sign-up-btn">Submit</button>  
-        </form>
-        
-    </div>   
+  
+    <div class="reg">
+
+   <center> <h1>Trainer Details  Form</h1> </center>
+   <hr>
+    <form method="POST" enctype="multipart/form-data">
+    {%csrf_token%}
+    {{form.as_p}}
+     
+        <button type="submit" value="save">Submit</button>
+    </form>
+</div>
+
+
+     
 </body>
 </html>

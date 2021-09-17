@@ -8,6 +8,7 @@
 
 <style>
 body{
+    
     margin-left: 300px;
     height:50%;
     width:80%;
@@ -108,12 +109,84 @@ tr:nth-child(odd){
 a{
     text-decoration: none;
 }
+.navbar{
+    
+    position: absolute;
+    width: 100%;
+    padding: 5px 0;
+    padding-bottom: -50px;
+    font-family: 'Roboto Slab', serif;
+    transition: all 0.3s ease;
+    /* margin-top: 20px; */
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: #c200b8;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: rgb(104, 1, 145);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar .logo a{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Style Script', cursive;
+   
+}
+
+
+.navbar .logo a span{
+    color: #ffffff;
+    transition: all 0.3s ease;
+    font-family: 'Style Script', cursive;
+   
+}
 
 </style>
 </head>
 
-<body>    
+<body> 
+       
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">C<span>Q</span></a></div>
+            <ul class="menu">
+                <li><a href="{%url 'home_page'%}" class="menu-btn">Home</a></li>
+
+                <li><a href="{%url 'student_list'%}"class="menu-btn">Students</a></li>
+                <li><a href="{%url 'trainer_list'%}"class="menu-btn">Trainers</a></li>
+                <li><a href="{%url 'course_list'%}"class="menu-btn">Courses</a></li>
+               <li><a href="{%url 'cal:calendar'%}"class="menu-btn">Events</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+       
+
     <h1>Students Details</h1>
     <div class="clearfix">
     <a class="btn info" href="{% url 'register_student' %}"> ADD STUDENT </a>
@@ -137,7 +210,9 @@ a{
         {% for student in students%}
         <tr>
             <td>
-                <img src="{{student.profile_pic.url}}">
+                {% if student.profile_pic %}
+                <img src="{{ student.profile_pic.url }}">
+                {% endif %}
             </td>
             <td>
                 {{student.first_name}}
